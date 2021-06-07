@@ -14,8 +14,8 @@ public class AddressBookServiceTest {
     void givenContactWhenUpdated_ShouldSyncWithDB() {
         AddressBookService addressBookService = new AddressBookService();
         List<AddressBookContacts> addressBookContacts = addressBookService.readAddressBookData(AddressBookService.IOService.DB_IO);
-        addressBookService.updateLastName("Ajay", "dhu");
-        boolean result = addressBookService.AddressBookInSyncWithDB("Ajay");
+        addressBookService.updateLastName("Piyush", "Naik");
+        boolean result = addressBookService.AddressBookInSyncWithDB("Piyush");
         Assertions.assertTrue(result);
     }
 }
